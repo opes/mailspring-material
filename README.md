@@ -1,5 +1,5 @@
 # Material for N1
-A sunrise theme for N1, inspired by @equinusocio's [Material Theme](https://github.com/equinusocio/material-theme).
+A theme for N1, inspired by [Material Theme](https://github.com/equinusocio/material-theme) by [equinusocio](https://github.com/equinusocio).
 
 ![](preview.png)
 
