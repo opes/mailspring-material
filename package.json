@@ -1,9 +1,10 @@
 {
   "name": "material",
+  "title": "Material",
   "displayName": "Material",
   "theme": "ui",
   "version": "0.1.0",
-  "description": "",
+  "description": "Inspired by @equinusocio's Material Theme.",
   "license": "GPL-3.0",
   "engines": {
     "nylas": "*"
