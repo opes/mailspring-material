@@ -1,35 +1,44 @@
-// TEXT
+@material-blue: #263238;
+@material-teal: #7ab7b4;
+@material-light-teal: #607D8B;
+@material-gray: rgba(221, 221, 221, 0.1);
 
-@unread-color: #74b8d7;
-@action-color: @green;
+//=============================== Components ===========================//
 
-@progress-bar-fill: @light-blue;
-@progress-bar-background: @light-gray;
+//== Toolbar
+@toolbar-background-color: @material-blue;
 
-@background-color-info: @light-blue;
-@background-color-success: @green;
+//== Account Sidebar
+@panel-background-color:         @material-blue;
+@source-list-bg:                 @panel-background-color;
+@source-list-active-bg:          @panel-background-color;
+@source-list-active-color:       @component-active-color;
+
+//== Thread List (e.g, `.list-group-item`, `.list-item`)
+@list-bg:                  @white;
+@list-border:              #ddd;
+@list-hover-bg:            darken(@list-bg, 4%);
+@list-focused-color:       @list-bg;
+@list-focused-bg:          @component-active-color;
+@list-focused-border:      @list-focused-bg;
+@list-selected-color:      inherit;
+@list-selected-bg:         mix(@component-active-color, @list-bg, 17%);
+@list-selected-border:     mix(@component-active-color, @list-bg, 50%);
+
+//== Notifications
+@background-color-info: @blue-light;
+@background-color-success: #009ec4;
 @background-color-warning: #ff4800;
-@background-color-error: @red;
-@background-color-pending: @light-gray;
+@background-color-error: #f15f4b;
+@background-color-pending: #b4babd;
 
-@background-gradient: linear-gradient(to top, rgba(241,241,241,0.75) 0%,
-rgba(253,253,253,0.75) 100%);
-
-@base-border-color: transparent;
-@border-color: transparent;
-@border-color-subtle: transparent;
-
-// Menus
-
-@menu-divider-color: @light-gray;
-@menu-item-color-hover: fade(@background-selected, 10%);
-@menu-item-color-selected: @background-selected;
+//== Menus
+@menu-item-color-hover: fade(@blue-light, 10%);
+@menu-item-color-selected: @blue-light;
 @menu-text-color-selected: @text-color-inverse;
 
-// Sizes
-
-@disclosure-arrow-size: 12px;
-@input-font-size: 14px;
+//== Sizes
+@disclosure-arrow-size: 8px;
 
 @component-padding: 10px;
 @component-icon-padding: 5px;
@@ -37,52 +46,41 @@ rgba(253,253,253,0.75) 100%);
 @component-line-height: 25px;
 @component-border-radius: 2px;
 
-//== Panels and Sidebars
-@panel-background-color: #263238;
-@toolbar-background-color: #263238;
-
-//== Threadlist
-@list-bg:                 #fff;
-@list-border:             #ddd;
-@list-border-radius:      @border-radius-base;
-
 
 //=============================== Colors ===============================//
 
 @accent-primary:      @blue;
-@accent-primary-dark: #7ab7b4;
-@accent-secondary:    @nylas-yellow;
+@accent-primary-dark: @material-teal;
 
-@background-primary:     #263238;
-@background-off-primary: #263238;
-@background-secondary:   #263238;
-@background-tertiary:    #263238;
-@background-selected:    #546E7A;
+@background-primary:     @material-blue;
+@background-off-primary: @material-blue;
+@background-secondary:   @material-blue;
+@background-tertiary:    @material-blue;
 
-@border-primary-bg: rgba(221, 221, 221, 0.1);
-@border-secondary-bg: rgba(221, 221, 221, 0.1);
-@border-tertiary-bg: rgba(221, 221, 221, 0.1);
-@border-color-divider: rgba(221, 221, 221, 0.1);
-
-@info-color:    @blue-dark;
-@success-color: @nylas-green;
-@warning-color: #f0ad4e;
-@error-color:   #d9534f;
-@danger-color:  #d9534f;
+@color-info:    @blue-dark;
+@color-success: #5CB346;
+@color-warning: #f0ad4e;
+@color-error:   #d9534f;
+@color-danger:  #d9534f;
 
 @component-active-color:        @accent-primary-dark;
 @component-active-bg:           @background-primary;
-@component-secondary-active-bg: @background-primary;
 
+@background-gradient: linear-gradient(to top, rgba(241,241,241,0.75) 0%,
+rgba(253,253,253,0.75) 100%);
+
+@border-color-primary: @material-gray;
+@border-color-secondary: @material-gray;
+@border-color-tertiary: @material-gray;
+@border-color-divider: @material-gray;
 
 //============================= Typography =============================//
 
 // ----- Colors -----
-@text-color:         #607D8B;
+@text-color:         @material-light-teal;
 @text-color-inverse: @white;
-@text-color-alert:  #e64d65;
 
-@text-color-heading: #7ab7b4;
+@text-color-heading: @material-teal;
 
 @text-color-link:        @blue;
 @text-color-link-hover:  @blue-dark;
