@@ -23,9 +23,10 @@ input[type="text"], input[type="email"], input[type="date"], input[type="datetim
 .scrollbar-track {
   background: none;
   border-left: none;
+  width: 10px;
   .scrollbar-handle {
-    background: @background-primary;
-    border: 1px solid @border-color-primary;
+    background: @material-gray;
+    border: none;
   }
 }
 
@@ -62,19 +63,71 @@ body.is-blurred {
   background: @background-primary;
   border-bottom: 1px solid @border-color-primary;
   &:hover {
-    background: #546E7A;
-    color: white;
+    background: @background-primary;
+    .mail-important-icon {
+      opacity: 0.2;
+    }
+  }
+  &.focused:hover {
+    background: @component-active-color;
   }
 }
 
 .thread-list .unread:not(.focused):not(.selected):not(.next-is-selected), .draft-list .unread:not(.focused):not(.selected):not(.next-is-selected) {
   border-bottom: 1px solid @border-color-primary;
+  &:hover {
+    background: @background-primary;
+  }
 }
 
 .list-container .list-item.focused {
   border-bottom: 1px solid transparent;
   &:hover {
     border-bottom: 1px solid transparent;
+  }
+}
+
+.thread-list .swipe-backing.swipe-all,
+.thread-list .swipe-backing.swipe-archive,
+.draft-list .swipe-backing.swipe-all,
+.draft-list .swipe-backing.swipe-archive {
+  background: @material-green;
+  &.confirmed {
+    background: saturate(@material-green, 10%);
+  }
+}
+
+.thread-list .swipe-backing.swipe-snooze,
+.draft-list .swipe-backing.swipe-snooze {
+  background: @material-purple;
+  &.confirmed {
+    background: saturate(@material-purple, 10%);
+  }
+}
+
+.thread-list .swipe-backing.swipe-trash,
+.draft-list .swipe-backing.swipe-trash {
+  background: @material-red;
+  &.confirmed {
+    background: saturate(@material-red, 10%);
+  }
+}
+
+.undo-redo {
+  background-color: @material-teal;
+  color: @white;
+}
+
+.undo-redo-message-wrapper {
+  color: @white !important;
+}
+
+.undo-redo-action-wrapper {
+  img {
+    background-color: @white !important;
+  }
+  .undo-redo-action-text {
+    color: @white !important;
   }
 }
 
@@ -91,16 +144,13 @@ body.is-blurred {
   border-bottom: none;
 }
 
-#message-list .message-item-wrap .message-item-white-wrap {
-  box-shadow: 0 0 0.5px @border-color-primary, 0 1px 1.5px @border-color-primary;
-}
-
-.column-MessageListSidebar {
-  border-left: none;
-}
-
-.undo-redo-manager {
-  color: @text-color;
+#message-list {
+  .message-item-wrap .message-item-white-wrap, .footer-reply-area-wrap  {
+    box-shadow: 0 0 0.5px @border-color-primary, 0 1px 1.5px @border-color-primary;
+  }
+  .show-hidden-messages {
+    border: none;
+  }
 }
 
 .button-dropdown .secondary-picker {
@@ -114,6 +164,30 @@ body.is-blurred {
 
 .composer-full-window .composer-inner-wrap .composer-action-bar-wrap {
   border-top: 1px solid @border-color-primary;
+}
+
+// CONTACT SIDEBAR
+.column-MessageListSidebar {
+  border-left: none;
+  .sidebar-section.visible {
+    background-color: @material-teal;
+    color: @white;
+    .participant-profile {
+      .core-personal-info .email, .additional-info .bio {
+        color: @white !important;
+      }
+    }
+  }
+
+  .related-threads {
+    background-color: darken(@material-teal, 10%);
+    .subject, .timestamp, .toggle {
+      color: @white;
+    }
+    .related-thread:hover {
+      background-color: @material-gray;
+    }
+  }
 }
 
 // PREFERENCES 
