@@ -3,8 +3,8 @@
   "title": "Material",
   "displayName": "Material",
   "theme": "ui",
-  "version": "0.1.0",
-  "description": "Inspired by @equinusocio's Material Theme.",
+  "version": "0.1.0-alpha.1",
+  "description": "Inspired by @equinusocio's Material Theme, forked from @jackiehluo's n1-material.",
   "license": "GPL-3.0",
   "engines": {
     "mailspring": "*"
