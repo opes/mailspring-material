@@ -7,7 +7,7 @@
   "description": "Inspired by @equinusocio's Material Theme.",
   "license": "GPL-3.0",
   "engines": {
-    "nylas": "*"
+    "mailspring": "*"
   },
   "private": true
 }
