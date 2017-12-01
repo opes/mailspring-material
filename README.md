@@ -1,5 +1,5 @@
 # Material for Mailspring
-## (WORK IN PROGRESS, NOT YET FUNCTIONAL)
+### (WORK IN PROGRESS, NOT YET FUNCTIONAL)
 A theme for Mailspring, inspired by [Material Theme](https://github.com/equinusocio/material-theme) by [equinusocio](https://github.com/equinusocio).
 
 ![](preview.png)
