@@ -171,26 +171,27 @@ body.is-blurred {
   border-left: none;
   .sidebar-section.visible {
     background-color: @material-teal;
-    color: @white;
+    color: @white !important;
     .participant-profile {
-      .core-personal-info .email, .additional-info .bio {
+      .personal-info .email, .additional-info .bio {
         color: @white !important;
+      }
+    }
+
+    .related-threads {
+      background-color: darken(@material-teal, 10%);
+      .subject, .timestamp, .toggle, .content {
+        color: @white !important;
+      }
+      .related-thread:hover {
+        background-color: @material-gray;
       }
     }
   }
 
-  .related-threads {
-    background-color: darken(@material-teal, 10%);
-    .subject, .timestamp, .toggle {
-      color: @white;
-    }
-    .related-thread:hover {
-      background-color: @material-gray;
-    }
-  }
 }
 
-// PREFERENCES 
+// PREFERENCES
 .preferences-wrap {
   .appearance-mode-switch .appearance-mode {
     background: @material-gray;
