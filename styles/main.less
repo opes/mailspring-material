@@ -206,3 +206,23 @@ body.is-blurred {
     color: @text-color;
   }
 }
+
+// TOASTS
+#Threads {
+  .undo-redo-toast .content {
+    .message {
+      color: @white !important;
+    }
+    .action {
+      color: @white !important;
+
+      .content-mask {
+        background-color: @white !important;
+      }
+
+      .undo-action-text, .redo-action-text {
+        color: @white !important;
+      }
+    }
+  }
+}
